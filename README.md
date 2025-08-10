@@ -10,7 +10,7 @@ This is a collection of little physics toys, math experiments, and interactive s
 
 Double pendulum simulation with tunable parameters and damping. Pygame and p5.js versions.
 
-Details: [double-pendulum/](double-pendulum/)
+Details: [double-pendulum/](https://github.com/PeithonKing/fantastic-pancakes/tree/main/double-pendulum)
 
 - Python: Pygame
 - Web: p5.js ([demo](https://peithonking.github.io/fantastic-pancakes/double-pendulum/))
@@ -19,16 +19,16 @@ Details: [double-pendulum/](double-pendulum/)
 
 Conway’s Game of Life with interactive controls and speed adjustment.
 
-Details: [game-of-life/](game_of_life/)
+Details: [game-of-life/](https://github.com/PeithonKing/fantastic-pancakes/tree/main/game-of-life/)
 
 - Python: NumPy, Pygame
-- Web: p5.js ([demo](https://peithonking.github.io/fantastic-pancakes/game_of_life/))
+- Web: p5.js ([demo](https://peithonking.github.io/fantastic-pancakes/game-of-life/))
 
 ## One Man
 
 Population simulation toy. Explore population trends with adjustable parameters.
 
-Details: [one-man/](one-man/)
+Details: [one-man/](https://github.com/PeithonKing/fantastic-pancakes/tree/main/one-man/)
 
 - Python: NumPy, Matplotlib
 - Web: Bootstrap 5, uPlot, vanilla JS ([demo](https://peithonking.github.io/fantastic-pancakes/one-man/))
@@ -37,6 +37,6 @@ Details: [one-man/](one-man/)
 
 Animated Perlin noise and line structures. Pause/resume to see the effect.
 
-Details: [wierd_structures/](wierd_structures/)
+Details: [wierd_structures/](https://github.com/PeithonKing/fantastic-pancakes/tree/main/wierd_structures/)
 
 - Python: NumPy, Matplotlib
