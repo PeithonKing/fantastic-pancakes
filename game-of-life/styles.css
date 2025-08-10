@@ -214,4 +214,34 @@ input[type="number"]:focus {
   #speed {
     width: 160px;
   }
+  .controls .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px 0;
+  }
+  .controls .group {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  .controls .group label {
+    min-width: 80px;
+    flex: 0 0 80px;
+    margin-bottom: 0;
+  }
+  .controls button,
+  .controls input[type="number"],
+  .controls input[type="range"] {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .controls .row.top {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  .panel {
+    padding: 10px;
+  }
 }

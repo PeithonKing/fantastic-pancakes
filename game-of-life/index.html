@@ -69,7 +69,19 @@
 		</section>
 	</main>
 
-	<script src="./sketch.js"></script>
+		<script>
+			// Set default grid size for mobile devices
+			document.addEventListener('DOMContentLoaded', function() {
+				var isMobile = window.matchMedia('(max-width: 640px)').matches;
+				if (isMobile) {
+					var cols = document.getElementById('cols');
+					var rows = document.getElementById('rows');
+					if (cols) cols.value = 35;
+					if (rows) rows.value = 50;
+				}
+			});
+		</script>
+		<script src="./sketch.js"></script>
 </body>
 
 </html>

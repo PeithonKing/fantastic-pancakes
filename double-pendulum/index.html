@@ -16,10 +16,6 @@
 			<h1>Double Pendulum</h1>
 
 			<div class="controls">
-				<button id="toggleBtn" class="primary">Start</button>
-				<button id="resetBtn" class="ghost"
-					title="Reset angles and velocities to current sliders">Reset</button>
-
 				<div class="group">
 					<label for="l1">Length 1 (l1): <span id="l1Val">200</span> px</label>
 					<input type="range" id="l1" min="50" max="400" step="1" value="200" />
@@ -59,6 +55,11 @@
 				<div class="group">
 					<label for="damping">Damping: <span id="dampingVal">0.00</span></label>
 					  <input type="range" id="damping" min="0" max="0.1" step="0.001" value="0" />
+				</div>
+
+				<div class="buttons">
+					<button id="toggleBtn" class="primary">Start</button>
+					<button id="resetBtn" class="ghost" title="Reset angles and velocities to current sliders">Reset</button>
 				</div>
 			</div>
 
