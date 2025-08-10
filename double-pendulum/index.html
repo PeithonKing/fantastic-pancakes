@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/svg+xml" href="https://peithonking.github.io/portfolio-page/images/icon.svg" />
+	<title>Double Pendulum • p5.js</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+</head>
+
+<body>
+	<div class="app">
+		<aside class="sidebar">
+			<h1>Double Pendulum</h1>
+
+			<div class="controls">
+				<button id="toggleBtn" class="primary">Start</button>
+				<button id="resetBtn" class="ghost"
+					title="Reset angles and velocities to current sliders">Reset</button>
+
+				<div class="group">
+					<label for="l1">Length 1 (l1): <span id="l1Val">200</span> px</label>
+					<input type="range" id="l1" min="50" max="400" step="1" value="200" />
+				</div>
+				<div class="group">
+					<label for="l2">Length 2 (l2): <span id="l2Val">200</span> px</label>
+					<input type="range" id="l2" min="50" max="400" step="1" value="200" />
+				</div>
+
+				<div class="group">
+					<label for="m1">Mass 1 (m1): <span id="m1Val">1.0</span></label>
+					<input type="range" id="m1" min="0.5" max="10" step="0.5" value="1" />
+				</div>
+				<div class="group">
+					<label for="m2">Mass 2 (m2): <span id="m2Val">1.0</span></label>
+					<input type="range" id="m2" min="0.5" max="10" step="0.5" value="1" />
+				</div>
+
+				<div class="group">
+					<label for="a1">Initial angle 1 (a1): <span id="a1Val">90</span>°</label>
+					<input type="range" id="a1" min="-180" max="180" step="1" value="90" />
+				</div>
+				<div class="group">
+					<label for="a2">Initial angle 2 (a2): <span id="a2Val">22.5</span>°</label>
+					<input type="range" id="a2" min="-180" max="180" step="0.5" value="22.5" />
+				</div>
+
+				<div class="group">
+					<label for="g">Gravity (g): <span id="gVal">1.00</span></label>
+					<input type="range" id="g" min="0.1" max="10" step="0.1" value="1" />
+				</div>
+
+				<div class="group">
+					<label for="mr">Mass radius scale (mr): <span id="mrVal">5</span> px/kg</label>
+					<input type="range" id="mr" min="2" max="20" step="1" value="5" />
+				</div>
+				<div class="group">
+					<label for="damping">Damping: <span id="dampingVal">0.00</span></label>
+					  <input type="range" id="damping" min="0" max="0.1" step="0.001" value="0" />
+				</div>
+			</div>
+
+			<footer>
+				<small>Sliders are editable only when paused.</small>
+			</footer>
+		</aside>
+
+		<main class="main">
+			<div id="canvas-container" class="canvas-container"></div>
+		</main>
+	</div>
+
+	<script src="sketch.js"></script>
+</body>
+
+</html>

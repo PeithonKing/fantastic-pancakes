@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/svg+xml" href="https://peithonking.github.io/portfolio-page/images/icon.svg" />
+	<title>Conway's Game of Life</title>
+	<meta name="description" content="Conway's Game of Life with interactive controls." />
+
+	<!-- p5.js CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+	<header class="app-header">
+		<div class="container">
+			<h1>Conway's Game of Life</h1>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="panel controls">
+			<div class="row wrap gap">
+				<div class="group">
+					<label for="cols">Columns</label>
+					<input id="cols" type="number" min="5" max="300" step="1" value="100" />
+				</div>
+				<div class="group">
+					<label for="rows">Rows</label>
+					<input id="rows" type="number" min="5" max="300" step="1" value="60" />
+				</div>
+				<div class="group">
+					<label>&nbsp;</label>
+					<button id="applySize" class="btn">Apply Grid Size</button>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="group">
+					<label for="speed">Target Speed <span id="speedValue" class="pill">12</span></label>
+					<input id="speed" type="range" min="1" max="60" value="12" />
+				</div>
+				<div class="group">
+					<label>Generation</label>
+					<div id="generation" class="pill">0</div>
+				</div>
+				<div class="group">
+					<label>FPS</label>
+					<div id="fps" class="pill">0</div>
+				</div>
+			</div>
+			<div class="row wrap gap top">
+				<button id="toggleRun" class="btn primary">Start Simulation</button>
+				<button id="randomize" class="btn">Random Fill</button>
+				<button id="fillAll" class="btn">Fill All (1)</button>
+				<button id="clearAll" class="btn danger">Clear (0)</button>
+			</div>
+		</section>
+
+		<section class="panel canvas-panel">
+			<p class="hint">Tip: Click or drag on the grid to toggle cells. Resize the grid above to start fresh.</p>
+			<div id="canvas-holder" class="canvas-holder"></div>
+		</section>
+	</main>
+
+	<script src="./sketch.js"></script>
+</body>
+
+</html>
