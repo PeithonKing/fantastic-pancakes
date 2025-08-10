@@ -2,18 +2,6 @@
 
 Here is an implementation for the **Conways Game of Life** in Python using [PyGame](https://www.pygame.org/news) library.
 
-## Rules
-
-(These rules have been taken from [Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules). Visit the link for more information)
-
-The Game of Life, created by British mathematician John Horton Conway in 1970, is a cellular automaton. It's a zero-player game where initial state determines evolution. It's interactive by creating an initial configuration and observing its evolution. Turing complete, simulating universal constructors and Turing machines.
-
-Game of Life universe: infinite 2D grid, cells alive or dead. Each cell interacts with 8 neighbors, horizontal, vertical, diagonal. Steps involve transitions at each time step. The rules are as follows:
-
-1. Live cell with <2 or >3 neighbors dies.
-2. Live cell with 2 or 3 neighbors survives.
-3. Dead cell with 3 neighbors revives.
-
 ## How to run
 
 1. Clone the repository: `git clone www.github.com/PeithonKing/game_of_life.git`
