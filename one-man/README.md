@@ -77,3 +77,8 @@ Then scan the Population Graph to read the year when totals reach your chosen ta
 - Vanilla JS + Bootstrap for UI
 - uPlot for fast charts
 - No backend; parameters saved in localStorage
+
+
+---
+
+*This project is part of the fantastic-pancakes collection by [PeithonKing](https://github.com/PeithonKing/fantastic-pancakes).*

@@ -82,3 +82,6 @@ The web app overlays faint angle arcs (relative to vertical) and a small HUD wit
 - `index.html`, `sketch.js`, `styles.css` — Web (p5.js)
 
 
+---
+
+*This project is part of the fantastic-pancakes collection by [PeithonKing](https://github.com/PeithonKing/fantastic-pancakes).*

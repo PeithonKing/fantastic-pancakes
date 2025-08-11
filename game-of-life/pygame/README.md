@@ -27,3 +27,8 @@ Here is an implementation for the **Conways Game of Life** in Python using [PyGa
 	- **'blank'**: Generates a blank grid with all dead cells.
 	- **'random'**: Randomly generates the initial state of the grid.
 	- **name**: Loads the grid from the file `f'{name}_{WIDTH}_{HEIGHT}_{SIZE}.npy'`.
+
+
+---
+
+*This project is part of the fantastic-pancakes collection by [PeithonKing](https://github.com/PeithonKing/fantastic-pancakes).*

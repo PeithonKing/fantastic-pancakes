@@ -22,3 +22,8 @@ Game of Life universe: infinite 2D grid, cells alive or dead. Each cell interact
 ## Python version
 
 See [pygame/README.md](https://github.com/PeithonKing/fantastic-pancakes/tree/main/game-of-life/pygame/README.md) for all instructions, controls, and advanced options for the Python (PyGame) version.
+
+
+---
+
+*This project is part of the fantastic-pancakes collection by [PeithonKing](https://github.com/PeithonKing/fantastic-pancakes).*

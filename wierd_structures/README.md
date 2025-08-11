@@ -11,3 +11,7 @@ Again when you resume the animation, the line structure is back.
 I swear I do not do anything to the canvas when you pause the animation.
 
 more [here](https://www.youtube.com/watch?v=TdTMeNXCnTs)
+
+---
+
+*This project is part of the fantastic-pancakes collection by [PeithonKing](https://github.com/PeithonKing/fantastic-pancakes).*

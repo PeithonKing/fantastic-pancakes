@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braitenberg Vehicles Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Braitenberg Vehicles Simulation</h1>
+        
+        <div class="controls">
+            <div class="controls-grid">
+                <div class="control-group">
+                    <div class="control-label">Connection</div>
+                    <div class="toggle-group">
+                        <input type="radio" name="mode" value="direct" id="mode-direct" checked="checked" />
+                        <label for="mode-direct">Direct</label>
+                        <input type="radio" name="mode" value="crossed" id="mode-crossed" />
+                        <label for="mode-crossed">Crossed</label>
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <div class="control-label">Strength</div>
+                    <div class="toggle-group">
+                        <input type="radio" name="polarity" value="inhibit" id="polarity-inhibit" checked="checked" />
+                        <label for="polarity-inhibit">Inhibit</label>
+                        <input type="radio" name="polarity" value="excite" id="polarity-excite" />
+                        <label for="polarity-excite">Excite</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="button-row">
+                <button id="place-lights" class="action-btn">Place Lights</button>
+                <button id="place-vehicles" class="action-btn">Place Vehicles</button>
+                <button id="start-simulation" class="action-btn">Start Simulation</button>
+            </div>
+        </div>
+        
+        <div id="canvas-container"></div>
+        
+        <div class="instructions">
+            <strong style="font-size: x-large">Instructions:</strong>
+            <br><br>
+            <ul>
+                <li>Choose <b>Connection</b> mode: <b>Direct</b> or <b>Crossed</b> using the top toggle.</li>
+                <li>Select <b>Strength</b>: <b>Inhibit</b> or <b>Excite</b> using the second toggle.</li>
+                <li>Click <b>Place Lights</b>, then click anywhere on the canvas to add and right click to remove light sources (stimuli).</li>
+                <li>Click <b>Place Vehicles</b>, then click on the canvas to add vehicles, or right-click on a vehicle to remove it. Click the button again to stop placing vehicles.</li>
+                <li>Click <b>Start Simulation</b> to begin. You can pause/resume the simulation with the same button.</li>
+                <li>While simulation is running, controls are disabled to prevent changes.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="render.js"></script>
+</body>
+</html>
