@@ -6,6 +6,15 @@ This is a collection of little physics toys, math experiments, and interactive s
 ---
 
 
+## Braitenberg Vehicles
+
+Simple simulation of Braitenberg vehicles—autonomous agents that exhibit lifelike behaviors using simple sensor-motor connections. Interactive and visual.
+
+Details: [braitenberg-vehicles/](https://github.com/PeithonKing/fantastic-pancakes/tree/main/braitenberg-vehicles)
+
+- Web: p5.js ([demo](https://peithonking.github.io/fantastic-pancakes/braitenberg-vehicles/))
+
+
 ## Double Pendulum
 
 Double pendulum simulation with tunable parameters and damping. Pygame and p5.js versions.
