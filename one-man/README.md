@@ -1,5 +1,7 @@
 # The Last Man on Earth — Population Simulation
 
+[[demo]](https://peithonking.github.io/fantastic-pancakes/one-man/)
+
 What if a catastrophe wipes out all but one man? This interactive model lets you explore how long it could take to repopulate, given assumptions about fertility windows, attempt rates, pregnancy success, birth losses, mortality, and lifespan.
 
 ## Core idea

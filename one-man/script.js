@@ -252,10 +252,14 @@ function drawChart(male, female) {
     };
 
     if (uplot) {
-        uplot.destroy();
+        // Reset y-axis limits before updating data
+        const yMax = Math.max(...male, ...female) * 1.1;
+        uplot.setScale('y', { min: 0, max: yMax });
+        uplot.setData(data);
+    } else {
+        // If chart doesn't exist, create it
+        uplot = new uPlot(opts, data, document.getElementById('chart'));
     }
-
-    uplot = new uPlot(opts, data, document.getElementById('chart'));
 }
 
 // --- Bar chart for age distribution ---
@@ -314,10 +318,14 @@ function drawBarChart(male_ages, female_ages) {
     };
 
     if (uplotBar) {
-        uplotBar.destroy();
+        // Reset y-axis limits before updating data
+        const yMax = Math.max(...male_ages, ...female_ages) * 1.1;
+        uplotBar.setScale('y', { min: 0, max: yMax });
+        uplotBar.setData(data);
+    } else {
+        // If chart doesn't exist, create it
+        uplotBar = new uPlot(opts, data, document.getElementById('age-bar-chart'));
     }
-
-    uplotBar = new uPlot(opts, data, document.getElementById('age-bar-chart'));
 }
 
 // --- Age frequency year slider logic ---
