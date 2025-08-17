@@ -12,7 +12,7 @@ function setup() {
     let angle = random(0, TWO_PI);
     let vx = 15 * cos(angle);
     let vy = 15 * sin(angle);
-    ball = new Ball(0, 100, vx, vy, color(255, 255, 255));
+    ball = new Ball(0, 50, vx, vy, color(255, 255, 255));
     for (let life = 7; life > 0; life--) {
         console.log(life);
         ring = new Ring(
@@ -101,7 +101,7 @@ class Ring {
             color(255, 255, 0),   // Yellow (3)
             color(255, 127, 0),   // Orange (2)
             color(255, 0, 0),      // Red (1)
-            color(100, 100, 100)      // Black (0)
+            color(34, 34, 34)      // Black (0)
         ];
         // Determine color index based on current life
         let colorIdx = constrain(Math.ceil(this.life / this.sublife), 0, 7);
