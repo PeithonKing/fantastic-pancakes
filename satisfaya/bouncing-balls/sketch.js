@@ -2,8 +2,11 @@ let ball;
 let k = 50; // You can change k to any value you want
 let GRAVITY; // gravity vector, will be initialized in setup()
 let rings = [];
+let breakSfx, boingSfx;
 
 function setup() {
+    breakSfx = loadSound('sfx/break.mp3');
+    boingSfx = loadSound('sfx/boing.mp3');
     createCanvas(9 * k, 16 * k);
     frameRate(60); // Force FPS to 30
     background(34);
@@ -44,6 +47,10 @@ function draw() {
             // if ring life is 0, delete it
             if (ring.life === 0) {
                 rings.splice(rings.indexOf(ring), 1);
+                breakSfx.play();
+            }
+            else {
+                boingSfx.play();
             }
             break;
         }
