@@ -11,17 +11,22 @@ function setup() {
     frameRate(60); // Force FPS to 30
     background(34);
     GRAVITY = createVector(0, -3); // gravity vector, downward
-    // Place ball near top center, random initial velocity, gravity acceleration
+    initSimulation();
+}
+
+// Initialize or reset the simulation: ball + rings
+function initSimulation() {
+    rings = [];
+    // Place ball near top center, random initial velocity
     let angle = random(0, TWO_PI);
     let vx = 15 * cos(angle);
     let vy = 15 * sin(angle);
     ball = new Ball(0, 50, vx, vy, color(255, 255, 255));
     for (let life = 7; life > 0; life--) {
-        console.log(life);
-        ring = new Ring(
-            radius = 200 - life * 10,
-            life = life,
-            speed = 0.5 + life * 0.2
+        let ring = new Ring(
+            200 - life * 10,
+            life,
+            0.5 + life * 0.2
         );
         rings.push(ring);
     }
@@ -32,6 +37,13 @@ function draw() {
     translate(width/2, height/2);
     scale(1, -1);
     ball.update(deltaTime);
+
+    // Reset simulation if ball crosses y = -500
+    if (ball.pos.y < -400) {
+        initSimulation();
+        return; // skip this frame
+    }
+
     // Ball-ring collision and bounce
     for (let ring of rings) {
         if (ring.life > 0 && ring.collidesWith(ball)) {
